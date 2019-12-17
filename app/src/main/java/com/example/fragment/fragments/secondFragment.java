@@ -40,9 +40,9 @@ public class secondFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        float radius =float.parseFloat(etRadius.getText().toString());
+        float radius =Float.parseFloat(etRadius.getText().toString());
         float area=3.14f * radius * radius;
 
-        Toast.makeText(getActivity(), "area of cicrle", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "area of cicrle"+area, Toast.LENGTH_SHORT).show();
     }
 }
